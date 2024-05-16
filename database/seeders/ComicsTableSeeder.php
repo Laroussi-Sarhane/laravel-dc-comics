@@ -13,7 +13,21 @@ class ComicsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $products= config('products');
-        dump($products);
+        $products= config('comics');
+        foreach($products as $product){
+            $new_comic= new Comic();
+            $new_comic->title =$product['title'];
+            $new_comic->description =$product['description'];
+            $new_comic->price =$product['price'];
+            $new_comic->series =$product['series'];
+            $new_comic->sale_date =$product['sale_date'];
+            $new_comic->writers =$product['writers'];
+            $new_comic->slug =$product['slug'];
+
+
+
+
+        }
+
     }
 }
