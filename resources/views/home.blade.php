@@ -2,7 +2,10 @@
 
 @section('content')
 
-<h1>Home</h1>
+<h1> {{$product->titolo}} </h1>
+
+@dump($comic);
+
 
 
 @endsection
