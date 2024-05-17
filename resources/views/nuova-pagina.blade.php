@@ -3,11 +3,6 @@
 @section('content')
 
 <h1>Nuova Pagina</h1>
-
-@endsection
-
-@section('title')
-Nuova pagina
 <table class="table">
     <thead>
       <tr>
@@ -35,6 +30,11 @@ Nuova pagina
         @endforelse
     </tbody>
     </table>
+
+@endsection
+
+@section('title')
+Nuova pagina
 
 
 
