@@ -13,6 +13,7 @@ class ComicsController extends Controller
     public function index()
     {
         $products= comic::all();
+        return view('nuovapagina', compact('products'));
 
     }
 

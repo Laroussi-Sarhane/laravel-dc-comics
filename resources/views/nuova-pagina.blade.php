@@ -3,12 +3,41 @@
 @section('content')
 
 <h1>Nuova Pagina</h1>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium modi harum quod facere dolorem similique a earum ad, id repellendus, quaerat laudantium cum quam ea rerum omnis debitis numquam!
-</p>
 
 @endsection
 
 @section('title')
-   Nuova pagina
+Nuova pagina
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+        @forelse ($products as $product )
+
+        <tr>
+          <th scope="row">1</th>
+          <td> {{ $product->id}} </td>
+          <td> {{ $product->title}} </td>
+          <td> {{ $product->description}} </td>
+          <td> {{ $product->series}} </td>
+          <td> {{ $product->sale_date}} </td>
+          <td> {{ $product->type}} </td>
+          <td> {{ $product->writers}} </td>
+        </tr>
+        @empty
+
+        @endforelse
+    </tbody>
+    </table>
+
+
+
+
+
 @endsection
