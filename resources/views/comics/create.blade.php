@@ -2,14 +2,12 @@
 
 @section('content')
 
-<h1>  </h1>
+<h1> nuoco fumetto </h1>
+<p>
+
+</p>
 
 
 
 
-
-@endsection
-
-@section('title')
-    Home
 @endsection

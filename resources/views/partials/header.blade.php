@@ -11,8 +11,9 @@
           <a class="nav-link" href="{{ route('comics.index') }}">nuova pagina</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+            <a class="nav-link" href="{{ route('comics.create') }}">nuovo comic</a>
+          </li>
+
       </ul>
 
 
