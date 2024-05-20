@@ -9,6 +9,8 @@
             <h1>{{$comic->titolo}}</h1>
             <p>{{$comic->description}}</p>
             <p>{{$comic->price}}</p>
+            <p>{{$comic->series}}</p>
+
 
 
 
